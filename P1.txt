@@ -1,0 +1,6 @@
+1. Difference between std::reduce (introduced from C++ 17) and std::accumulate (introduced from C++ 98)
+A: The main difference is std::reduce suppports parallel computation where as std::accumulate sequential computation.
+The main catch here is the results may vary if the equation doesn't hold associative and commutative.
+(Eg: std::minus results varies due to not holding of associative and commutative properties because of parallel execution).
+
+link: https://blog.tartanllama.xyz/accumulate-vs-reduce/
