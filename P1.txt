@@ -1,6 +1,16 @@
-1. Difference between std::reduce (introduced from C++ 17) and std::accumulate (introduced from C++ 98)
+1. Difference between std::reduce (introduced from C++ 17) and std::accumulate (introduced from C++ 98)?
+
 A: The main difference is std::reduce suppports parallel computation where as std::accumulate sequential computation.
 The main catch here is the results may vary if the equation doesn't hold associative and commutative.
 (Eg: std::minus results varies due to not holding of associative and commutative properties because of parallel execution).
 
 link: https://blog.tartanllama.xyz/accumulate-vs-reduce/
+
+
+2. Difference between std::next (C++ 11) and std::advance (C++ 11)?
+
+A: The main difference between std::next and std::advance is that std::next have return type and it returns the position of the iterator which has specified in the distance argument where as std::advance doesn't have any return type and it will point to the desired distance specified in second argument.
+
+
+link: 
+https://www.google.com/amp/s/www.geeksforgeeks.org/stdnext-vs-stdadvance-in-cpp/amp/
